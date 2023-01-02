@@ -103,6 +103,8 @@ public class MethodsExercises {
             // factorial
             long factorial = 1;
             String layout = "";
+            String layout1 = "";
+
             for (int i = 1; i <= n; i++) {
                 factorial *= i;
                 String mid = "";
@@ -112,15 +114,13 @@ public class MethodsExercises {
 //                       System.out.println("j: "+j);
                     if (j == i) {
                         mid += j;
-                        int space = n-j;
-                    Formatter mids = new Formatter();
-                    mids.format("%" + space + "s", mid);
-                    String midss = mid.toString();
-                    mid = midss;
+                        System.out.println("test:  " + mid);
                     } else {
                         mid += (j + " * ");
                     }
-                    layout = j + "!" + " = " + mid + " = " + factorial;
+                    layout1 = j + "!" + " = " + mid;
+                   layout = String.format(layout1 + "%+,"+(n-i)*2+"d","= "+factorial);
+                    // + " = " + factorial
 //                         layout = j+"!" + " = "+ j + "*" +i +" = "+ factorial;
 //                        System.out.println(j+"!" + " = "+ j + "*" +i +" = "+ factorial);
                 }
