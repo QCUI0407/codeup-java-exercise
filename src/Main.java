@@ -66,16 +66,22 @@ public class Main {
 //        //y = y - x;
 //        y -= x;
 
-        int reallyBigNumber = 2147483647; // fits into integer value
-        //int reallyBigNumber2 = 2147483648; /// past integer buffer
-        int increReallyBigNumber = 2147483647;
-        increReallyBigNumber++;
-        ++increReallyBigNumber;
-        System.out.println(increReallyBigNumber);
+//        int reallyBigNumber = 2147483647; // fits into integer value
+//        //int reallyBigNumber2 = 2147483648; /// past integer buffer
+//        int increReallyBigNumber = 2147483647;
+//        increReallyBigNumber++;
+//        ++increReallyBigNumber;
+//        System.out.println(increReallyBigNumber);
 
         //Syntax, Types, and variables Exercise: End
         //Console IO Lecture: Start
 
+                int[][] primes = new int[3][3];
+                primes[2][2] = 1;
 
-    }
+                System.out.println(primes[1][2]);
+            }
+
+
+
 }
